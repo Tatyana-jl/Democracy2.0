@@ -5,7 +5,7 @@ import React, { Component } from "react";
 import LMap from "./components/map";
 import UpForm from "./components/uploadform"
 
-const endpoint = "http://10.100.0.37:8085/api";
+const endpoint = "http://10.100.0.37:8085";
 
 export default class MapView extends Component {
   constructor(props) {
