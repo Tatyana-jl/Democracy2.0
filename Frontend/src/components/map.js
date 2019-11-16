@@ -2,7 +2,7 @@
 // React Frontend for the Junction 2019 Stara/Microsoft/Aivon challenges.
 
 import React, { Component } from 'react'
-import { Map, TileLayer } from "react-leaflet";
+import { Map, TileLayer, Marker, Popup} from "react-leaflet";
 import 'leaflet/dist/leaflet.css';
 
 export default class LMap extends Component {
@@ -34,6 +34,9 @@ export default class LMap extends Component {
             attribution='&amp;copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
+          <Marker position={position}>
+            <Popup>A pretty CSS3 popup.<br />Easily customizable.</Popup>
+          </Marker>
 
           // If you want to add the markers for the open requests, a an array of Marker components should happen here.
 
