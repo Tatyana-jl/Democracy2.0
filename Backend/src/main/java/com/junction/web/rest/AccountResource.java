@@ -67,7 +67,7 @@ public class AccountResource {
 
         JSONObject jsonObject = new JSONObject(ret);
 
-        return ResponseEntity.status(HttpStatus.OK).body(jsonObject.getString("categories"));
+        return ResponseEntity.status(HttpStatus.OK).header("Access-Control-Allow-Origin:*").body(jsonObject.getString("categories"));
     }
 
     /**
