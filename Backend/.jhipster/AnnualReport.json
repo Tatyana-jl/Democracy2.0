@@ -1,0 +1,84 @@
+{
+    "name": "AnnualReport",
+    "fields": [
+        {
+            "fieldName": "businessName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fundName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "leiCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "periodFrom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "periodTo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fillingDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "preparationToDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "dataAccessibility",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataSource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastUpdatedOn",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "financeReport",
+            "otherEntityRelationshipName": "annualReport",
+            "relationshipName": "financeReport",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "ruzAttachment",
+            "otherEntityRelationshipName": "annualReport",
+            "relationshipName": "ruzAttachment",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accountingEntity",
+            "otherEntityRelationshipName": "annualReport",
+            "relationshipName": "accountingEntity",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191115224103",
+    "entityTableName": "annual_report",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

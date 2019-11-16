@@ -1,0 +1,43 @@
+{
+    "name": "RuzLegalForm",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameSk",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameEn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accountingEntity",
+            "otherEntityRelationshipName": "ruzLegalForm",
+            "relationshipName": "accountingEntity"
+        }
+    ],
+    "changelogDate": "20191115224057",
+    "entityTableName": "ruz_legal_form",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

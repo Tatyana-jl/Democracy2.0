@@ -1,0 +1,31 @@
+{
+  "junstiontestApp": {
+    "problem": {
+      "home": {
+        "title": "Problems",
+        "createLabel": "Crear nuevo Problem",
+        "createOrEditLabel": "Crear o editar Problem",
+        "notFound": "No Problems found"
+      },
+      "created": "Un nuevo Problem ha sido creado con el identificador {{ param }}",
+      "updated": "Un Problem ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Problem ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Problem {{ id }}?"
+      },
+      "detail": {
+        "title": "Problem"
+      },
+      "latitude": "Latitude",
+      "longitude": "Longitude",
+      "imageBefore": "Image Before",
+      "imageAfter": "Image After",
+      "category": "Category",
+      "voteCounter": "Vote Counter",
+      "startTime": "Start Time",
+      "endTime": "End Time",
+      "problemType": "Problem Type",
+      "adminUser": "Admin User"
+    }
+  }
+}

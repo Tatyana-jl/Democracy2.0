@@ -1,0 +1,43 @@
+{
+    "name": "Region",
+    "fields": [
+        {
+            "fieldName": "code",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameSk",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "nameEn",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "createdAt",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "updatedAt",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "accountingEntity",
+            "otherEntityRelationshipName": "region",
+            "relationshipName": "accountingEntity"
+        }
+    ],
+    "changelogDate": "20191115224056",
+    "entityTableName": "region",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

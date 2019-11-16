@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity RuzAttachment.
+    -->
+    <changeSet id="20191115224104-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="ruz_attachment_id"
+                                 baseTableName="ruz_attachment_finance_report"
+                                 constraintName="fk_ruz_attachment_finance_report_ruz_attachment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruz_attachment"/>
+
+        <addForeignKeyConstraint baseColumnNames="finance_report_id"
+                                 baseTableName="ruz_attachment_finance_report"
+                                 constraintName="fk_ruz_attachment_finance_report_finance_report_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="finance_report"/>
+        
+    </changeSet>
+</databaseChangeLog>

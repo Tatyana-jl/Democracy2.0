@@ -1,0 +1,29 @@
+{
+  "junstiontestApp": {
+    "ruzAttachment": {
+      "home": {
+        "title": "Ruz Attachments",
+        "createLabel": "Create a new Ruz Attachment",
+        "createOrEditLabel": "Create or edit a Ruz Attachment",
+        "notFound": "No Ruz Attachments found"
+      },
+      "created": "A new Ruz Attachment is created with identifier {{ param }}",
+      "updated": "A Ruz Attachment is updated with identifier {{ param }}",
+      "deleted": "A Ruz Attachment is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ruz Attachment {{ id }}?"
+      },
+      "detail": {
+        "title": "Ruz Attachment"
+      },
+      "name": "Name",
+      "mimeType": "Mime Type",
+      "size": "Size",
+      "pages": "Pages",
+      "digest": "Digest",
+      "languageCode": "Language Code",
+      "financeReport": "Finance Report",
+      "annualReport": "Annual Report"
+    }
+  }
+}

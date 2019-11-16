@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity FinanceReport.
+    -->
+    <changeSet id="20191115224101-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="template_id"
+                                 baseTableName="finance_report"
+                                 constraintName="fk_finance_report_template_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="template"/>
+
+    </changeSet>
+</databaseChangeLog>

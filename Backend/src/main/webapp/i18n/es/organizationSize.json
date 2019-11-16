@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "organizationSize": {
+      "home": {
+        "title": "Organization Sizes",
+        "createLabel": "Crear nuevo Organization Size",
+        "createOrEditLabel": "Crear o editar Organization Size",
+        "notFound": "No Organization Sizes found"
+      },
+      "created": "Un nuevo Organization Size ha sido creado con el identificador {{ param }}",
+      "updated": "Un Organization Size ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Organization Size ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Organization Size {{ id }}?"
+      },
+      "detail": {
+        "title": "Organization Size"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

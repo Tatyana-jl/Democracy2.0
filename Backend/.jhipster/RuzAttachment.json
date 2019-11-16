@@ -1,0 +1,57 @@
+{
+    "name": "RuzAttachment",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "mimeType",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "size",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "pages",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "digest",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "languageCode",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "financeReport",
+            "otherEntityRelationshipName": "ruzAttachment",
+            "relationshipName": "financeReport",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "annualReport",
+            "otherEntityRelationshipName": "ruzAttachment",
+            "relationshipName": "annualReport",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191115224104",
+    "entityTableName": "ruz_attachment",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

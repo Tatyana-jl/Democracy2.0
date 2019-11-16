@@ -1,0 +1,36 @@
+{
+    "name": "FinanceAnalysis",
+    "fields": [
+        {
+            "fieldName": "cin",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "financeReport",
+            "otherEntityRelationshipName": "financeAnalysis",
+            "relationshipName": "financeReport",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accountingEntity",
+            "otherEntityRelationshipName": "financeAnalysis",
+            "relationshipName": "accountingEntity",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191115224059",
+    "entityTableName": "finance_analysis",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

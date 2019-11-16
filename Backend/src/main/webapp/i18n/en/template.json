@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "template": {
+      "home": {
+        "title": "Templates",
+        "createLabel": "Create a new Template",
+        "createOrEditLabel": "Create or edit a Template",
+        "notFound": "No Templates found"
+      },
+      "created": "A new Template is created with identifier {{ param }}",
+      "updated": "A Template is updated with identifier {{ param }}",
+      "deleted": "A Template is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Template {{ id }}?"
+      },
+      "detail": {
+        "title": "Template"
+      },
+      "name": "Name",
+      "regulationIndication": "Regulation Indication",
+      "validFrom": "Valid From",
+      "validTo": "Valid To",
+      "tables": "Tables",
+      "financeReport": "Finance Report"
+    }
+  }
+}

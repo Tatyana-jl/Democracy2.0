@@ -1,0 +1,125 @@
+{
+    "name": "AccountingEntity",
+    "fields": [
+        {
+            "fieldName": "cin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "taxId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sid",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "businessName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "city",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "street",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "zip",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "establishedOn",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "terminatedOn",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "consolidated",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dataSource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastUpdatedOn",
+            "fieldType": "Instant"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "financeAnalysis",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "financeAnalysis"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "annualReport",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "annualReport"
+        },
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "financeStatement",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "financeStatement"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "region",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "region",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "district",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "district",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "municipality",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "municipality",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "ruzLegalForm",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "ruzLegalForm",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "skNaceCategory",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "skNaceCategory",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "organizationSize",
+            "otherEntityRelationshipName": "accountingEntity",
+            "relationshipName": "organizationSize",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191115224051",
+    "entityTableName": "accounting_entity",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

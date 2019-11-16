@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity AnnualReport.
+    -->
+    <changeSet id="20191115224103-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="annual_report_id"
+                                 baseTableName="annual_report_finance_report"
+                                 constraintName="fk_annual_report_finance_report_annual_report_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="annual_report"/>
+
+        <addForeignKeyConstraint baseColumnNames="finance_report_id"
+                                 baseTableName="annual_report_finance_report"
+                                 constraintName="fk_annual_report_finance_report_finance_report_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="finance_report"/>
+        
+        <addForeignKeyConstraint baseColumnNames="annual_report_id"
+                                 baseTableName="annual_report_ruz_attachment"
+                                 constraintName="fk_annual_report_ruz_attachment_annual_report_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="annual_report"/>
+
+        <addForeignKeyConstraint baseColumnNames="ruz_attachment_id"
+                                 baseTableName="annual_report_ruz_attachment"
+                                 constraintName="fk_annual_report_ruz_attachment_ruz_attachment_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruz_attachment"/>
+        
+        <addForeignKeyConstraint baseColumnNames="accounting_entity_id"
+                                 baseTableName="annual_report"
+                                 constraintName="fk_annual_report_accounting_entity_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="accounting_entity"/>
+
+    </changeSet>
+</databaseChangeLog>

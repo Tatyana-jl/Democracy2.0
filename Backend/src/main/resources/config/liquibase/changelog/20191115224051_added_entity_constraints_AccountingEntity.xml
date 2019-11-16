@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity AccountingEntity.
+    -->
+    <changeSet id="20191115224051-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="region_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_region_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="region"/>
+
+        <addForeignKeyConstraint baseColumnNames="district_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_district_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="district"/>
+
+        <addForeignKeyConstraint baseColumnNames="municipality_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_municipality_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="municipality"/>
+
+        <addForeignKeyConstraint baseColumnNames="ruz_legal_form_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_ruz_legal_form_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="ruz_legal_form"/>
+
+        <addForeignKeyConstraint baseColumnNames="sk_nace_category_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_sk_nace_category_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sk_nace_category"/>
+
+        <addForeignKeyConstraint baseColumnNames="organization_size_id"
+                                 baseTableName="accounting_entity"
+                                 constraintName="fk_accounting_entity_organization_size_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="organization_size"/>
+
+    </changeSet>
+</databaseChangeLog>

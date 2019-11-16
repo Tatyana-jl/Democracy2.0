@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "municipality": {
+      "home": {
+        "title": "Municipalities",
+        "createLabel": "Crear nuevo Municipality",
+        "createOrEditLabel": "Crear o editar Municipality",
+        "notFound": "No Municipalities found"
+      },
+      "created": "Un nuevo Municipality ha sido creado con el identificador {{ param }}",
+      "updated": "Un Municipality ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Municipality ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Municipality {{ id }}?"
+      },
+      "detail": {
+        "title": "Municipality"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

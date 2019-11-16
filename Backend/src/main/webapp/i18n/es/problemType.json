@@ -1,0 +1,24 @@
+{
+  "junstiontestApp": {
+    "problemType": {
+      "home": {
+        "title": "Problem Types",
+        "createLabel": "Crear nuevo Problem Type",
+        "createOrEditLabel": "Crear o editar Problem Type",
+        "notFound": "No Problem Types found"
+      },
+      "created": "Un nuevo Problem Type ha sido creado con el identificador {{ param }}",
+      "updated": "Un Problem Type ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Problem Type ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Problem Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Problem Type"
+      },
+      "category": "Category",
+      "problem": "Problem",
+      "problem": "Problem"
+    }
+  }
+}

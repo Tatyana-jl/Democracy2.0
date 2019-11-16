@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "district": {
+      "home": {
+        "title": "Districts",
+        "createLabel": "Crear nuevo District",
+        "createOrEditLabel": "Crear o editar District",
+        "notFound": "No Districts found"
+      },
+      "created": "Un nuevo District ha sido creado con el identificador {{ param }}",
+      "updated": "Un District ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un District ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar District {{ id }}?"
+      },
+      "detail": {
+        "title": "District"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

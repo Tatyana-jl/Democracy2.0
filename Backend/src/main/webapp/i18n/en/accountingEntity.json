@@ -1,0 +1,42 @@
+{
+  "junstiontestApp": {
+    "accountingEntity": {
+      "home": {
+        "title": "Accounting Entities",
+        "createLabel": "Create a new Accounting Entity",
+        "createOrEditLabel": "Create or edit a Accounting Entity",
+        "notFound": "No Accounting Entities found"
+      },
+      "created": "A new Accounting Entity is created with identifier {{ param }}",
+      "updated": "A Accounting Entity is updated with identifier {{ param }}",
+      "deleted": "A Accounting Entity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Accounting Entity {{ id }}?"
+      },
+      "detail": {
+        "title": "Accounting Entity"
+      },
+      "cin": "Cin",
+      "taxId": "Tax Id",
+      "sid": "Sid",
+      "businessName": "Business Name",
+      "city": "City",
+      "street": "Street",
+      "zip": "Zip",
+      "establishedOn": "Established On",
+      "terminatedOn": "Terminated On",
+      "consolidated": "Consolidated",
+      "dataSource": "Data Source",
+      "lastUpdatedOn": "Last Updated On",
+      "financeAnalysis": "Finance Analysis",
+      "annualReport": "Annual Report",
+      "financeStatement": "Finance Statement",
+      "region": "Region",
+      "district": "District",
+      "municipality": "Municipality",
+      "ruzLegalForm": "Ruz Legal Form",
+      "skNaceCategory": "Sk Nace Category",
+      "organizationSize": "Organization Size"
+    }
+  }
+}

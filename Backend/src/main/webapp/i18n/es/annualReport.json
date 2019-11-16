@@ -1,0 +1,35 @@
+{
+  "junstiontestApp": {
+    "annualReport": {
+      "home": {
+        "title": "Annual Reports",
+        "createLabel": "Crear nuevo Annual Report",
+        "createOrEditLabel": "Crear o editar Annual Report",
+        "notFound": "No Annual Reports found"
+      },
+      "created": "Un nuevo Annual Report ha sido creado con el identificador {{ param }}",
+      "updated": "Un Annual Report ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Annual Report ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Annual Report {{ id }}?"
+      },
+      "detail": {
+        "title": "Annual Report"
+      },
+      "businessName": "Business Name",
+      "type": "Type",
+      "fundName": "Fund Name",
+      "leiCode": "Lei Code",
+      "periodFrom": "Period From",
+      "periodTo": "Period To",
+      "fillingDate": "Filling Date",
+      "preparationToDate": "Preparation To Date",
+      "dataAccessibility": "Data Accessibility",
+      "dataSource": "Data Source",
+      "lastUpdatedOn": "Last Updated On",
+      "financeReport": "Finance Report",
+      "ruzAttachment": "Ruz Attachment",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

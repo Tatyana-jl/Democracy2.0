@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "ruzLegalForm": {
+      "home": {
+        "title": "Ruz Legal Forms",
+        "createLabel": "Crear nuevo Ruz Legal Form",
+        "createOrEditLabel": "Crear o editar Ruz Legal Form",
+        "notFound": "No Ruz Legal Forms found"
+      },
+      "created": "Un nuevo Ruz Legal Form ha sido creado con el identificador {{ param }}",
+      "updated": "Un Ruz Legal Form ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Ruz Legal Form ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Ruz Legal Form {{ id }}?"
+      },
+      "detail": {
+        "title": "Ruz Legal Form"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

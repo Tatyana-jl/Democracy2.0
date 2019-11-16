@@ -1,0 +1,41 @@
+{
+  "junstiontestApp": {
+    "financeStatement": {
+      "home": {
+        "title": "Finance Statements",
+        "createLabel": "Crear nuevo Finance Statement",
+        "createOrEditLabel": "Crear o editar Finance Statement",
+        "notFound": "No Finance Statements found"
+      },
+      "created": "Un nuevo Finance Statement ha sido creado con el identificador {{ param }}",
+      "updated": "Un Finance Statement ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Finance Statement ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Finance Statement {{ id }}?"
+      },
+      "detail": {
+        "title": "Finance Statement"
+      },
+      "periodFrom": "Period From",
+      "periodTo": "Period To",
+      "fillingDate": "Filling Date",
+      "preparationDate": "Preparation Date",
+      "preparationToDate": "Preparation To Date",
+      "approvalDate": "Approval Date",
+      "auditorsReportDate": "Auditors Report Date",
+      "businessName": "Business Name",
+      "cin": "Cin",
+      "taxId": "Tax Id",
+      "fundName": "Fund Name",
+      "leiCode": "Lei Code",
+      "consolidated": "Consolidated",
+      "centralGovernmentConsolidated": "Central Government Consolidated",
+      "publicAdministrationSummary": "Public Administration Summary",
+      "type": "Type",
+      "dataSource": "Data Source",
+      "lastUpdatedOn": "Last Updated On",
+      "financeReport": "Finance Report",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

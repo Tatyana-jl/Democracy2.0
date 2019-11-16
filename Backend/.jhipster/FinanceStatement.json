@@ -1,0 +1,104 @@
+{
+    "name": "FinanceStatement",
+    "fields": [
+        {
+            "fieldName": "periodFrom",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "periodTo",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fillingDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "preparationDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "preparationToDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "approvalDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "auditorsReportDate",
+            "fieldType": "ZonedDateTime"
+        },
+        {
+            "fieldName": "businessName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cin",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "taxId",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "fundName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "leiCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "consolidated",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "centralGovernmentConsolidated",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "publicAdministrationSummary",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "type",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataSource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastUpdatedOn",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "financeReport",
+            "otherEntityRelationshipName": "financeStatement",
+            "relationshipName": "financeReport",
+            "otherEntityField": "id",
+            "ownerSide": true
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "accountingEntity",
+            "otherEntityRelationshipName": "financeStatement",
+            "relationshipName": "accountingEntity",
+            "otherEntityField": "id"
+        }
+    ],
+    "changelogDate": "20191115224102",
+    "entityTableName": "finance_statement",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

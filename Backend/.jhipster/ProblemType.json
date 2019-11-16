@@ -1,0 +1,32 @@
+{
+    "name": "ProblemType",
+    "fields": [
+        {
+            "fieldName": "category",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "problem",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "problem",
+            "otherEntityRelationshipName": "problemType",
+            "relationshipName": "problem",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191116154922",
+    "entityTableName": "problem_type",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

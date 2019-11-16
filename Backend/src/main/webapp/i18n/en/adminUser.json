@@ -1,0 +1,24 @@
+{
+  "junstiontestApp": {
+    "adminUser": {
+      "home": {
+        "title": "Admin Users",
+        "createLabel": "Create a new Admin User",
+        "createOrEditLabel": "Create or edit a Admin User",
+        "notFound": "No Admin Users found"
+      },
+      "created": "A new Admin User is created with identifier {{ param }}",
+      "updated": "A Admin User is updated with identifier {{ param }}",
+      "deleted": "A Admin User is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Admin User {{ id }}?"
+      },
+      "detail": {
+        "title": "Admin User"
+      },
+      "name": "Name",
+      "problem": "Problem",
+      "role": "Role"
+    }
+  }
+}

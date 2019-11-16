@@ -1,0 +1,43 @@
+{
+    "name": "Template",
+    "fields": [
+        {
+            "fieldName": "name",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "regulationIndication",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "validFrom",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "validTo",
+            "fieldType": "Instant"
+        },
+        {
+            "fieldName": "tables",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "otherEntityName": "financeReport",
+            "otherEntityRelationshipName": "template",
+            "relationshipName": "financeReport"
+        }
+    ],
+    "changelogDate": "20191115224100",
+    "entityTableName": "template",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

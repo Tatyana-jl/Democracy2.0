@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.6.xsd">
+    <!--
+        Added the constraints for entity AdminUser.
+    -->
+    <changeSet id="20191116154920-2" author="jhipster">
+        
+        <addForeignKeyConstraint baseColumnNames="admin_user_id"
+                                 baseTableName="admin_user_problem"
+                                 constraintName="fk_admin_user_problem_admin_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="admin_user"/>
+
+        <addForeignKeyConstraint baseColumnNames="problem_id"
+                                 baseTableName="admin_user_problem"
+                                 constraintName="fk_admin_user_problem_problem_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="problem"/>
+        
+        <addForeignKeyConstraint baseColumnNames="role_id"
+                                 baseTableName="admin_user"
+                                 constraintName="fk_admin_user_role_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="role"/>
+
+    </changeSet>
+</databaseChangeLog>

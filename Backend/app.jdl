@@ -1,0 +1,40 @@
+entity Role {
+  role String
+}
+
+
+entity AdminUser {
+	name String
+    }
+
+entity Problem {
+  latitude Double,
+  longitude Double,
+  imageBefore Blob,
+  imageAfter Blob,
+  category String,
+  voteCounter Integer,
+  startTime Instant,
+  endTime Instant
+}
+
+entity ProblemType {
+category String,
+problem String
+}
+
+relationship OneToOne {
+Problem to ProblemType
+}
+
+relationship OneToMany {
+Role to AdminUser
+}
+
+relationship ManyToMany {
+AdminUser to Problem
+}
+
+dto * with mapstruct
+paginate * with pagination
+service * with serviceImpl

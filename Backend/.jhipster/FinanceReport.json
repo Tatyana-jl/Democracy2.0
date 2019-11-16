@@ -1,0 +1,79 @@
+{
+    "name": "FinanceReport",
+    "fields": [
+        {
+            "fieldName": "currency",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "taxOfficeCode",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataAccessibility",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "content",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataSource",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lastUpdatedOn",
+            "fieldType": "ZonedDateTime"
+        }
+    ],
+    "relationships": [
+        {
+            "relationshipType": "one-to-one",
+            "otherEntityName": "financeAnalysis",
+            "otherEntityRelationshipName": "financeReport",
+            "relationshipName": "financeAnalysis",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-one",
+            "otherEntityName": "template",
+            "otherEntityRelationshipName": "financeReport",
+            "relationshipName": "template",
+            "otherEntityField": "id"
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "annualReport",
+            "otherEntityRelationshipName": "financeReport",
+            "relationshipName": "annualReport",
+            "otherEntityField": "id",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "financeStatement",
+            "otherEntityRelationshipName": "financeReport",
+            "relationshipName": "financeStatement",
+            "otherEntityField": "id",
+            "ownerSide": false
+        },
+        {
+            "relationshipType": "many-to-many",
+            "otherEntityName": "ruzAttachment",
+            "otherEntityRelationshipName": "financeReport",
+            "relationshipName": "ruzAttachment",
+            "otherEntityField": "id",
+            "ownerSide": false
+        }
+    ],
+    "changelogDate": "20191115224101",
+    "entityTableName": "finance_report",
+    "dto": "mapstruct",
+    "pagination": "pagination",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "readOnly": false,
+    "clientRootFolder": "",
+    "applications": "*"
+}

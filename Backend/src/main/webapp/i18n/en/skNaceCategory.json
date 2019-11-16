@@ -1,0 +1,27 @@
+{
+  "junstiontestApp": {
+    "skNaceCategory": {
+      "home": {
+        "title": "Sk Nace Categories",
+        "createLabel": "Create a new Sk Nace Category",
+        "createOrEditLabel": "Create or edit a Sk Nace Category",
+        "notFound": "No Sk Nace Categories found"
+      },
+      "created": "A new Sk Nace Category is created with identifier {{ param }}",
+      "updated": "A Sk Nace Category is updated with identifier {{ param }}",
+      "deleted": "A Sk Nace Category is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sk Nace Category {{ id }}?"
+      },
+      "detail": {
+        "title": "Sk Nace Category"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At",
+      "accountingEntity": "Accounting Entity"
+    }
+  }
+}

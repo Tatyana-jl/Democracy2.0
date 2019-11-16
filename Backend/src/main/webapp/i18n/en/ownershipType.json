@@ -1,0 +1,26 @@
+{
+  "junstiontestApp": {
+    "ownershipType": {
+      "home": {
+        "title": "Ownership Types",
+        "createLabel": "Create a new Ownership Type",
+        "createOrEditLabel": "Create or edit a Ownership Type",
+        "notFound": "No Ownership Types found"
+      },
+      "created": "A new Ownership Type is created with identifier {{ param }}",
+      "updated": "A Ownership Type is updated with identifier {{ param }}",
+      "deleted": "A Ownership Type is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ownership Type {{ id }}?"
+      },
+      "detail": {
+        "title": "Ownership Type"
+      },
+      "code": "Code",
+      "nameSk": "Name Sk",
+      "nameEn": "Name En",
+      "createdAt": "Created At",
+      "updatedAt": "Updated At"
+    }
+  }
+}

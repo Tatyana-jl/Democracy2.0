@@ -1,0 +1,32 @@
+{
+  "junstiontestApp": {
+    "financeReport": {
+      "home": {
+        "title": "Finance Reports",
+        "createLabel": "Create a new Finance Report",
+        "createOrEditLabel": "Create or edit a Finance Report",
+        "notFound": "No Finance Reports found"
+      },
+      "created": "A new Finance Report is created with identifier {{ param }}",
+      "updated": "A Finance Report is updated with identifier {{ param }}",
+      "deleted": "A Finance Report is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Finance Report {{ id }}?"
+      },
+      "detail": {
+        "title": "Finance Report"
+      },
+      "currency": "Currency",
+      "taxOfficeCode": "Tax Office Code",
+      "dataAccessibility": "Data Accessibility",
+      "content": "Content",
+      "dataSource": "Data Source",
+      "lastUpdatedOn": "Last Updated On",
+      "financeAnalysis": "Finance Analysis",
+      "template": "Template",
+      "annualReport": "Annual Report",
+      "financeStatement": "Finance Statement",
+      "ruzAttachment": "Ruz Attachment"
+    }
+  }
+}
