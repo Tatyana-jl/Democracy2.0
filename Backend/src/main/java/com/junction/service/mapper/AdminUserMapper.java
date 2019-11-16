@@ -14,7 +14,7 @@ public interface AdminUserMapper extends EntityMapper<AdminUserDTO, AdminUser> {
     @Mapping(source = "role.id", target = "roleId")
     AdminUserDTO toDto(AdminUser adminUser);
 
-    @Mapping(target = "removeProblem", ignore = true)
+//    @Mapping(target = "removeProblem", ignore = true)
     @Mapping(source = "roleId", target = "role")
     AdminUser toEntity(AdminUserDTO adminUserDTO);
 

@@ -14,20 +14,20 @@
     <property name="uuidType" value="uuid" dbms="h2, postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224051_added_entity_AccountingEntity.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224052_added_entity_District.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224053_added_entity_Municipality.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224054_added_entity_OrganizationSize.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224055_added_entity_OwnershipType.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224056_added_entity_Region.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224057_added_entity_RuzLegalForm.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224058_added_entity_SkNaceCategory.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224059_added_entity_FinanceAnalysis.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224100_added_entity_Template.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224101_added_entity_FinanceReport.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224102_added_entity_FinanceStatement.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224103_added_entity_AnnualReport.xml" relativeToChangelogFile="false"/>
-    <include file="config/liquibase/changelog/20191115224104_added_entity_RuzAttachment.xml" relativeToChangelogFile="false"/>
+<!--    <include file="config/liquibase/changelog/20191115224051_added_entity_AccountingEntity.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224052_added_entity_District.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224053_added_entity_Municipality.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224054_added_entity_OrganizationSize.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224055_added_entity_OwnershipType.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224056_added_entity_Region.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224057_added_entity_RuzLegalForm.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224058_added_entity_SkNaceCategory.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224059_added_entity_FinanceAnalysis.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224100_added_entity_Template.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224101_added_entity_FinanceReport.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224102_added_entity_FinanceStatement.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224103_added_entity_AnnualReport.xml" relativeToChangelogFile="false"/>-->
+<!--    <include file="config/liquibase/changelog/20191115224104_added_entity_RuzAttachment.xml" relativeToChangelogFile="false"/>-->
     <include file="config/liquibase/changelog/20191116154919_added_entity_Role.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20191116154920_added_entity_AdminUser.xml" relativeToChangelogFile="false"/>
     <include file="config/liquibase/changelog/20191116154921_added_entity_Problem.xml" relativeToChangelogFile="false"/>

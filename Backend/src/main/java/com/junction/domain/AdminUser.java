@@ -65,17 +65,17 @@ public class AdminUser implements Serializable {
         return this;
     }
 
-    public AdminUser addProblem(Problem problem) {
-        this.problems.add(problem);
-        problem.getAdminUsers().add(this);
-        return this;
-    }
-
-    public AdminUser removeProblem(Problem problem) {
-        this.problems.remove(problem);
-        problem.getAdminUsers().remove(this);
-        return this;
-    }
+//    public AdminUser addProblem(Problem problem) {
+//        this.problems.add(problem);
+//        problem.getAdminUsers().add(this);
+//        return this;
+//    }
+//
+//    public AdminUser removeProblem(Problem problem) {
+//        this.problems.remove(problem);
+//        problem.getAdminUsers().remove(this);
+//        return this;
+//    }
 
     public void setProblems(Set<Problem> problems) {
         this.problems = problems;

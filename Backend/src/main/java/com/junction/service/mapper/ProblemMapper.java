@@ -15,8 +15,6 @@ public interface ProblemMapper extends EntityMapper<ProblemDTO, Problem> {
     ProblemDTO toDto(Problem problem);
 
     @Mapping(source = "problemTypeId", target = "problemType")
-    @Mapping(target = "adminUsers", ignore = true)
-    @Mapping(target = "removeAdminUser", ignore = true)
     Problem toEntity(ProblemDTO problemDTO);
 
     default Problem fromId(Long id) {
