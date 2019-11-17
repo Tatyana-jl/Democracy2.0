@@ -3,7 +3,7 @@
 
 import React, { Component } from "react";
 import LMap from "./components/map";
-import UpForm from "./components/uploadform"
+import UpForm from "./components/uploadform";
 
 const endpoint = "http://10.100.0.37:8085/api";
 
@@ -31,28 +31,28 @@ export default class MapView extends Component {
 
   // Request to create a new request on the backend
   submitRequest(request){
-    console.log(request);
+    console.log(request.picture);
 
     fetch(endpoint + "/recognize", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        "Access-Control-Allow-Origin": "*"
+        "Access-Control-Allow-Origin":"*"
       },
       body: JSON.stringify(
         {
-        address: request.location,
         name: request.name,
         type: request.type,
         picture: request.picture
       })
 
+      // We are getting error 500!
     }).then(response => {
       if (response.status === 200) {
         alert("Request created succesfully!");
       } else {
-        alert("Something went wrong! Call Santiago!");
+        alert("Something went wrong! Call Santiago!");  
       }
     });
   }
