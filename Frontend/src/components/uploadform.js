@@ -71,7 +71,7 @@ export default class UpForm extends Component {
             <input type="text" name="location" value={this.state.location.lat + ", "+ this.state.location.lon} onChange={this.handleTextChange}/>
           </span>
           <span>
-            <label>Name: </label>
+            <label>Your Name: </label>
             <input type="text" name="name" defaultValue="" onChange={this.handleTextChange}/>
           </span>
           <span>
