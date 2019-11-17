@@ -43,7 +43,6 @@ export default class LMap extends Component {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           
-//             Marker([51.5, -0.09]).addTo(Map).bindPopup('A pretty CSS3 popup.<br> Easily customizable.').openPopup();
           // If you want to add the markers for the open requests, a an array of Marker components should happen here  
 
         </Map>
